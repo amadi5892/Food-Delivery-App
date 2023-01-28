@@ -21,8 +21,6 @@ const HomeScreen = () => {
 
   return (
     <SafeAreaView className="bg-white pt-5" >
-      <Text className="text-red-500">
-
         {/* Header */}
         <View className="flex-row pb-3 items-center mx-4 space-x-2 px-4">
             <Image
@@ -51,7 +49,7 @@ const HomeScreen = () => {
         {/* Body */}
         <ScrollView className='bg-gray-100 flex-1' 
         contentContainerStyle={{
-            paddingBottom: 100,
+            paddingBottom: 1,
         }} >
             {/* Categories */}
             <Categories />
@@ -60,7 +58,6 @@ const HomeScreen = () => {
             {/* Features */}
         </ScrollView>
 
-      </Text>
     </SafeAreaView>
   )
 }
