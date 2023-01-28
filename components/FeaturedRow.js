@@ -19,7 +19,7 @@ const FeaturedRow = ({id, title, description}) => {
         paddingHorizontal: 15,
       }}
       showsHorizontalScrollIndicator={false}
-      className='pt-4'
+      className="pt-4"
       >
         {/* RestaurantCards... */}
       <RestaurantCard 
