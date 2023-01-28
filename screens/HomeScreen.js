@@ -8,7 +8,8 @@ import {
     AdjustmentsVerticalIcon,
     MagnifyingGlassIcon
  } from 'react-native-heroicons/outline';
- import Categories from '../components/categories';
+import Categories from '../components/Categories';
+import FeaturedRow from '../components/FeaturedRow';
 
 const HomeScreen = () => {
     const navigation = useNavigation();
@@ -36,7 +37,7 @@ const HomeScreen = () => {
         </View>
 
         {/* Search */}
-        <View className='flex-row items-center space-x-2 pb-2 mx-4 px-4' >
+        <View className='flex-row items-center space-x-2 pb-2 mx-4' >
             <View className='flex-row space-x-2 flex-1 bg-gray-200 p-3' >
                 <MagnifyingGlassIcon color='gray' size={20}/>
                 <TextInput  placeholder='Restaurants and cuisines'
@@ -47,15 +48,31 @@ const HomeScreen = () => {
         </View>
 
         {/* Body */}
-        <ScrollView className='bg-gray-100 flex-1' 
+        <ScrollView className='bg-gray-100' 
         contentContainerStyle={{
-            paddingBottom: 1,
+            paddingBottom: 100,
         }} >
             {/* Categories */}
             <Categories />
-
             
-            {/* Features */}
+            {/* Featured */}
+            <FeaturedRow
+                id="123" 
+                title='Featured'
+                description="Paid placements from our partners"
+            />
+            {/* Tasty Discounts */}
+            <FeaturedRow 
+                id='1234'
+                title='Featured'
+                description="Everyone's been enjoying these juicy discounts"
+            />
+            {/* Offers near you */}
+            <FeaturedRow 
+                id='12345'
+                title='Featured'
+                description="Why not support your local restaurant tonight"
+            />
         </ScrollView>
 
     </SafeAreaView>
