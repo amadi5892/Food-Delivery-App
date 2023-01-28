@@ -34,6 +34,30 @@ const FeaturedRow = ({id, title, description}) => {
         long={20}
         lat={0}
       />
+      <RestaurantCard 
+        id={123}
+        imgUrl="../assets/pizza.jpg"
+        title='Yo! Pizza'
+        rating={4.5}
+        genre='Pizzeria'
+        address='123 Main St'
+        short_description='This is a Test description'
+        dishes={[]}
+        long={20}
+        lat={0}
+      />
+      <RestaurantCard 
+        id={123}
+        imgUrl="../assets/pizza.jpg"
+        title='Yo! Pizza'
+        rating={4.5}
+        genre='Pizzeria'
+        address='123 Main St'
+        short_description='This is a Test description'
+        dishes={[]}
+        long={20}
+        lat={0}
+      />
       </ScrollView>
     </View>
   )
